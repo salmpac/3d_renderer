@@ -1,0 +1,72 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 16,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "cpp17-debug",
+            "displayName": "C++17 Debug",
+            "description": "Debug build with C++17",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_STANDARD": "17",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "cpp20-debug",
+            "displayName": "C++20 Debug",
+            "description": "Debug build with C++20",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_STANDARD": "20",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "cpp17-release",
+            "displayName": "C++17 Release",
+            "description": "Release build with C++17",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_CXX_STANDARD": "17",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "cpp20-release",
+            "displayName": "C++20 Release",
+            "description": "Release build with C++20",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_CXX_STANDARD": "20",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "cpp17-debug",
+            "configurePreset": "cpp17-debug"
+        },
+        {
+            "name": "cpp20-debug",
+            "configurePreset": "cpp20-debug"
+        },
+        {
+            "name": "cpp17-release",
+            "configurePreset": "cpp17-release"
+        },
+        {
+            "name": "cpp20-release",
+            "configurePreset": "cpp20-release"
+        }
+    ]
+}

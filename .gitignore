@@ -1,0 +1,20 @@
+# Build
+build/
+compile_commands.json
+
+# IDE
+.vscode/
+!.vscode/settings.json
+.idea/
+.cache/
+*.swp
+*.swo
+*~
+
+# Compiled
+*.o
+*.out
+*.app
+
+# macOS
+.DS_Store
